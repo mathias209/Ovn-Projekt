@@ -604,7 +604,7 @@
 				)
 			)
 		)
-		(property "Value" "4k4"
+		(property "Value" "17k8"
 			(at 5.08 2.37 90)
 			(layer "F.Fab")
 			(uuid "b0ebb259-0441-474b-b55c-3d79aa04013b")
@@ -778,7 +778,7 @@
 				)
 			)
 		)
-		(property "Value" "48k9"
+		(property "Value" "195k5"
 			(at 5.08 2.37 0)
 			(layer "F.Fab")
 			(uuid "42f89142-8e0d-46b5-91b1-1ae39906d050")

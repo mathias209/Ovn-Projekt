@@ -1996,7 +1996,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17b15fdd-f25a-4171-a756-c78fe4f99595")
-		(property "Reference" "RV3"
+		(property "Reference" "30k-60k1"
 			(at 111.76 76.1999 0)
 			(effects
 				(font
@@ -2053,7 +2053,7 @@
 		(instances
 			(project ""
 				(path "/68e4b426-3594-4562-a253-60ab6e547855"
-					(reference "RV3")
+					(reference "30k-60k1")
 					(unit 1)
 				)
 			)
@@ -2076,7 +2076,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "20k"
 			(at 135.89 106.172 90)
 			(effects
 				(font
@@ -2360,7 +2360,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 135.636 119.634 90)
 			(effects
 				(font
@@ -2599,28 +2599,28 @@
 			)
 		)
 		(pin "6"
-			(uuid "5b4bb19a-ed08-4742-bc12-f19445059e94")
+			(uuid "5b4bb19a-ed08-4742-bc12-f19445059e95")
 		)
 		(pin "5"
-			(uuid "2b309859-75ab-4ae9-be90-8aa4c8921d67")
+			(uuid "2b309859-75ab-4ae9-be90-8aa4c8921d68")
 		)
 		(pin "1"
-			(uuid "9cbe75d8-ee34-45e4-8ec6-0433ad2bba0a")
+			(uuid "9cbe75d8-ee34-45e4-8ec6-0433ad2bba0b")
 		)
 		(pin "2"
-			(uuid "f6dde9c9-97e2-48e7-b26a-9d59da32deb7")
+			(uuid "f6dde9c9-97e2-48e7-b26a-9d59da32deb8")
 		)
 		(pin "3"
-			(uuid "0526b06f-5cd0-47ed-9cb6-ffa5b00028d5")
+			(uuid "0526b06f-5cd0-47ed-9cb6-ffa5b00028d6")
 		)
 		(pin "4"
-			(uuid "d478139b-0c60-4490-bbea-c2e3ed4e4c1d")
+			(uuid "d478139b-0c60-4490-bbea-c2e3ed4e4c1e")
 		)
 		(pin "7"
-			(uuid "255a20f6-8e3b-4ced-9b0f-144f462d5a5e")
+			(uuid "255a20f6-8e3b-4ced-9b0f-144f462d5a5f")
 		)
 		(pin "8"
-			(uuid "60198b1f-0640-4895-bfe9-6e2e8c42f9cf")
+			(uuid "60198b1f-0640-4895-bfe9-6e2e8c42f9d0")
 		)
 		(instances
 			(project ""
@@ -2639,7 +2639,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "997efb88-7804-497b-aa9a-0c2d30c9d58b")
 		(property "Reference" "D1"
 			(at 114.3 114.3 0)
@@ -2650,7 +2649,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 114.3 116.84 0)
+			(at 114.3 115.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2869,7 +2868,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0.1"
 			(at 160.02 110.4899 0)
 			(effects
 				(font
@@ -2928,7 +2927,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d68889bf-5397-4da0-b5c7-18f480702201")
 		(property "Reference" "#FLG01"
 			(at 128.27 65.405 0)
@@ -2940,7 +2938,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 128.27 62.23 0)
+			(at 132.588 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,28 +3038,28 @@
 			)
 		)
 		(pin "6"
-			(uuid "5b4bb19a-ed08-4742-bc12-f19445059e94")
+			(uuid "5b4bb19a-ed08-4742-bc12-f19445059e96")
 		)
 		(pin "5"
-			(uuid "2b309859-75ab-4ae9-be90-8aa4c8921d67")
+			(uuid "2b309859-75ab-4ae9-be90-8aa4c8921d69")
 		)
 		(pin "1"
-			(uuid "9cbe75d8-ee34-45e4-8ec6-0433ad2bba0a")
+			(uuid "9cbe75d8-ee34-45e4-8ec6-0433ad2bba0c")
 		)
 		(pin "2"
-			(uuid "f6dde9c9-97e2-48e7-b26a-9d59da32deb7")
+			(uuid "f6dde9c9-97e2-48e7-b26a-9d59da32deb9")
 		)
 		(pin "3"
-			(uuid "0526b06f-5cd0-47ed-9cb6-ffa5b00028d5")
+			(uuid "0526b06f-5cd0-47ed-9cb6-ffa5b00028d7")
 		)
 		(pin "4"
-			(uuid "d478139b-0c60-4490-bbea-c2e3ed4e4c1d")
+			(uuid "d478139b-0c60-4490-bbea-c2e3ed4e4c1f")
 		)
 		(pin "7"
-			(uuid "255a20f6-8e3b-4ced-9b0f-144f462d5a5e")
+			(uuid "255a20f6-8e3b-4ced-9b0f-144f462d5a60")
 		)
 		(pin "8"
-			(uuid "60198b1f-0640-4895-bfe9-6e2e8c42f9cf")
+			(uuid "60198b1f-0640-4895-bfe9-6e2e8c42f9d1")
 		)
 		(instances
 			(project ""
