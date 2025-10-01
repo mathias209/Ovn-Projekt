@@ -1989,7 +1989,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "17k8"
+		(property "Value" "18k2"
 			(at 104.14 77.4699 0)
 			(effects
 				(font
@@ -2059,7 +2059,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "1k"
 			(at 99.06 100.3299 0)
 			(effects
 				(font

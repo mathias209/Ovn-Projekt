@@ -387,7 +387,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "1k"
 			(at 5 3.65 0)
 			(layer "F.Fab")
 			(uuid "6f5dbca6-ce46-4f03-b9df-6be807197215")
@@ -604,7 +604,7 @@
 				)
 			)
 		)
-		(property "Value" "17k8"
+		(property "Value" "18k2"
 			(at 5.08 2.37 90)
 			(layer "F.Fab")
 			(uuid "b0ebb259-0441-474b-b55c-3d79aa04013b")
