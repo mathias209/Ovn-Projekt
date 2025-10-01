@@ -38,8 +38,8 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
-			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_55555554)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_02000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -58,8 +58,8 @@
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
 			(pdf_single_document no)
-			(dxfpolygonmode yes)
-			(dxfimperialunits yes)
+			(dxfpolygonmode no)
+			(dxfimperialunits no)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
@@ -70,7 +70,7 @@
 			(sketchdnponfab yes)
 			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 3)
 			(mirror no)
 			(drillshape 1)
 			(scaleselection 1)
@@ -387,7 +387,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "1k"
 			(at 5 3.65 0)
 			(layer "F.Fab")
 			(uuid "6f5dbca6-ce46-4f03-b9df-6be807197215")
@@ -604,7 +604,7 @@
 				)
 			)
 		)
-		(property "Value" "4k4"
+		(property "Value" "18k2"
 			(at 5.08 2.37 90)
 			(layer "F.Fab")
 			(uuid "b0ebb259-0441-474b-b55c-3d79aa04013b")
@@ -778,7 +778,7 @@
 				)
 			)
 		)
-		(property "Value" "48k9"
+		(property "Value" "195k5"
 			(at 5.08 2.37 0)
 			(layer "F.Fab")
 			(uuid "42f89142-8e0d-46b5-91b1-1ae39906d050")
