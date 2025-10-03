@@ -1752,6 +1752,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VCC"
 			(power)
 			(pin_numbers
@@ -1879,12 +1980,6 @@
 		)
 	)
 	(junction
-		(at 76.2 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28f907b0-fad1-4b50-b314-f97a6f69a517")
-	)
-	(junction
 		(at 104.14 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1915,6 +2010,12 @@
 		(uuid "6c375f37-804f-4819-a6ae-0cee98555f6b")
 	)
 	(junction
+		(at 76.2 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6eac7028-3932-482f-b6c2-d10cc3eb7720")
+	)
+	(junction
 		(at 68.58 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1925,6 +2026,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8386a94b-c99c-44db-af2b-4e38e6470ed4")
+	)
+	(junction
+		(at 104.14 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88cbc256-9ad2-4191-9bac-0521dd554243")
+	)
+	(junction
+		(at 106.68 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88f96887-5941-4b41-a088-94b5e77e14e9")
+	)
+	(no_connect
+		(at 106.68 100.33)
+		(uuid "12c385d6-99d9-46c7-9cb4-4be5368872e8")
+	)
+	(no_connect
+		(at 106.68 80.01)
+		(uuid "890ad775-671c-414f-9f4b-ecf418beadd9")
 	)
 	(wire
 		(pts
@@ -1988,16 +2109,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 58.42) (xy 185.42 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "192591dd-a24f-44b6-974f-dfbef2026475")
-	)
-	(wire
-		(pts
 			(xy 59.69 78.74) (xy 73.66 78.74)
 		)
 		(stroke
@@ -2035,16 +2146,6 @@
 			(type default)
 		)
 		(uuid "308ad95b-3d6d-4579-b346-e06e6d2bccf0")
-	)
-	(wire
-		(pts
-			(xy 76.2 64.77) (xy 90.17 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33b4ab44-c0a9-4d4e-af36-1e1e46ee0d2c")
 	)
 	(wire
 		(pts
@@ -2108,7 +2209,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 64.77) (xy 76.2 62.23)
+			(xy 76.2 62.23) (xy 76.2 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2125,16 +2226,6 @@
 			(type default)
 		)
 		(uuid "54be40aa-51d6-4b67-80a2-ed305c7d87eb")
-	)
-	(wire
-		(pts
-			(xy 90.17 64.77) (xy 90.17 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59b2cd5a-cbef-4eaf-878a-63ca76302443")
 	)
 	(wire
 		(pts
@@ -2238,6 +2329,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 116.84) (xy 104.14 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a037fe-149c-4ab0-b6bf-07dc117ee35c")
+	)
+	(wire
+		(pts
 			(xy 142.24 85.09) (xy 147.32 85.09)
 		)
 		(stroke
@@ -2268,7 +2369,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 118.11) (xy 104.14 113.03)
+			(xy 104.14 118.11) (xy 104.14 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2285,16 +2386,6 @@
 			(type default)
 		)
 		(uuid "d34c461a-431b-4ca8-816d-42dee5f2aa46")
-	)
-	(wire
-		(pts
-			(xy 76.2 69.85) (xy 76.2 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d438397a-f892-4320-9e8b-132fe63e955b")
 	)
 	(wire
 		(pts
@@ -2375,28 +2466,6 @@
 			(type default)
 		)
 		(uuid "f40b079a-fb51-43fd-b9ef-6303631ee3f1")
-	)
-	(global_label "Forbindelse"
-		(shape input)
-		(at 185.42 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a435e3b6-a15e-4de0-8ab3-7e00c50f5257")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 199.3513 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:VCC")
@@ -2556,7 +2625,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
 			(at 54.61 78.74 0)
 			(effects
 				(font
@@ -2590,6 +2659,73 @@
 			(project ""
 				(path "/28151c38-d2b5-45f4-b0a5-6e4a2e3edefc"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 104.14 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c8f94b5-7055-4b4a-ba65-0cd3d6b31661")
+		(property "Reference" "#FLG02"
+			(at 102.235 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86acc455-02f9-4342-bbfc-b1a70b584026")
+		)
+		(instances
+			(project ""
+				(path "/28151c38-d2b5-45f4-b0a5-6e4a2e3edefc"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -2687,7 +2823,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal"
 			(at 81.28 91.7448 0)
 			(effects
 				(font
@@ -2755,7 +2891,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
 			(at 55.88 105.41 0)
 			(effects
 				(font
@@ -2795,6 +2931,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 106.68 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c31d75bb-78b2-4c9f-b1ee-e43a612fa409")
+		(property "Reference" "#FLG03"
+			(at 106.68 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 106.68 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 106.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9cde78d-78f9-4fd2-bbac-bcdbc0880dcd")
+		)
+		(instances
+			(project ""
+				(path "/28151c38-d2b5-45f4-b0a5-6e4a2e3edefc"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 86.36 83.82 0)
 		(unit 1)
@@ -2822,7 +3024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 84.582 83.82 90)
 			(effects
 				(font
@@ -2890,7 +3092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ADC0804LCN:DIP254P762X508-20"
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_LongPads"
 			(at 124.46 87.63 0)
 			(effects
 				(font
@@ -3143,7 +3345,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 55.88 71.12 0)
 			(effects
 				(font
@@ -3213,7 +3415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 152.4 77.47 0)
 			(effects
 				(font
@@ -3268,6 +3470,72 @@
 			(project ""
 				(path "/28151c38-d2b5-45f4-b0a5-6e4a2e3edefc"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 76.2 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa484ff2-25f2-4d42-9206-f3617590594b")
+		(property "Reference" "#FLG01"
+			(at 76.2 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 76.2 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 76.2 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3fe78cc-ccab-4b7c-af05-3bf110e1dd3b")
+		)
+		(instances
+			(project ""
+				(path "/28151c38-d2b5-45f4-b0a5-6e4a2e3edefc"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
