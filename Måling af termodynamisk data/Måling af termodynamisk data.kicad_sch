@@ -2992,7 +2992,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "debbace0-e6ca-4c30-9963-72d201468486")
 		(property "Reference" "U1"
 			(at 134.62 86.36 0)
@@ -3003,7 +3002,7 @@
 			)
 		)
 		(property "Value" "MCP6002-xSN"
-			(at 134.62 88.9 0)
+			(at 125.73 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
