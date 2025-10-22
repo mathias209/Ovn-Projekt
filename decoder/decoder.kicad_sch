@@ -1367,6 +1367,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "LSB"
+		(exclude_from_sim no)
+		(at 185.928 118.364 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4003adf1-e427-44a7-93db-5ded34f41e4b")
+	)
+	(text "MSB"
+		(exclude_from_sim no)
+		(at 191.262 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aceb93df-de05-4284-8fda-27c6966bd37a")
+	)
 	(junction
 		(at 194.31 109.22)
 		(diameter 0)
