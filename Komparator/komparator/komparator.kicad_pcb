@@ -1186,6 +1186,32 @@
 		(layer "Edge.Cuts")
 		(uuid "abb44a5f-a1f3-4313-a889-3ab29fc9f4bd")
 	)
+	(gr_text "V"
+		(at 136.5 76.5 0)
+		(layer "B.Cu")
+		(uuid "8cc68fa0-6b7f-492b-9cd6-d56a3e861d7f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "O"
+		(at 124.5 76 0)
+		(layer "B.Cu")
+		(uuid "ffd6bae6-4256-4b61-ad09-79a396d675d8")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(segment
 		(start 126.74863 84.5)
 		(end 124.95863 86.29)
