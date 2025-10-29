@@ -1293,7 +1293,7 @@
 		(at 216.81 82.89 180)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), LongPads")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 3.81 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "50be7da7-8725-446e-868a-bb87a981bc8b")
@@ -2702,11 +2702,10 @@
 		(at 174.88 93.11)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), LongPads")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads")
-		(property "Reference" "U2"
+		(property "Reference" "U3"
 			(at 3.81 -2.33 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "8f3c2b95-8329-4110-a75a-4c6bfc8e0935")
+			(uuid "7d696f14-d50f-4846-ba0f-eb56e4befa65")
 			(effects
 				(font
 					(size 1 1)
@@ -2715,9 +2714,9 @@
 			)
 		)
 		(property "Value" "74HC238"
-			(at -31.65 7.69 0)
+			(at 3.12 -0.11 0)
 			(layer "F.Fab")
-			(uuid "40cc600a-7fd5-4ae6-a17b-28d19f3bff04")
+			(uuid "95a3e771-234c-4f53-b148-789c3795404e")
 			(effects
 				(font
 					(size 1 1)
@@ -2729,7 +2728,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f31c40ce-106c-4b74-a20e-c805eaaebb97")
+			(uuid "b88f51b5-9cee-447f-9bbc-9ed84f0a4266")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2741,7 +2740,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d4968d64-a3ea-477f-8176-9fd4d7a422cc")
+			(uuid "d2d1cc72-e544-49b2-a888-d3e3685d3877")
 			(effects
 				(font
 					(size 1.27 1.27)
