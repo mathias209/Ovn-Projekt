@@ -1232,7 +1232,7 @@
 			)
 		)
 		(property "Value" "57K6"
-			(at 3.81 3.92 0)
+			(at 3.31 0 0)
 			(layer "F.Fab")
 			(uuid "99c4fb03-77f6-4eef-b61e-be1d8170f60b")
 			(effects
@@ -2267,7 +2267,7 @@
 		)
 	)
 	(gr_text "3"
-		(at 124 102 0)
+		(at 124 104.5 0)
 		(layer "B.Cu" knockout)
 		(uuid "df41d37a-7df1-4b91-8a5c-d6ff72189056")
 		(effects
@@ -2280,7 +2280,7 @@
 		)
 	)
 	(gr_text "2"
-		(at 124 104.5 0)
+		(at 124 102 0)
 		(layer "B.Cu" knockout)
 		(uuid "ef40f259-982d-4cac-b205-7f55cf4b528e")
 		(effects
