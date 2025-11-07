@@ -1,0 +1,27 @@
+LTspice 24.1.9 for Windows
+Circuit: Z:\home\skole\elektro\Ovn Projekt\termo.net
+Start Time: Wed Oct 29 12:29:50 2025
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(832): Syntax error (unexpected input).
+.model BUK7Y1240E VDMOS(Rg=1.69 Vto=4.6 Rd=8m Rs=100u Rb=2m Kp=90 Lambda=0 Cgdmin=111p Cgdmax=409p A=0.6 Cgs=660p Cjo=563p M=0.59 Is=0 VJ=0.5 N=1 TT=3n Fc=0.5 Bv=44 Ibv=250u Nbv=1 mfg=NXP ksubthres=.1 Vds=40 * Ron=12m Qg=15n)
+                                                                                                                                                                                                                     ^^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(832): No such parameter defined.
+.model BUK7Y1240E VDMOS(Rg=1.69 Vto=4.6 Rd=8m Rs=100u Rb=2m Kp=90 Lambda=0 Cgdmin=111p Cgdmax=409p A=0.6 Cgs=660p Cjo=563p M=0.59 Is=0 VJ=0.5 N=1 TT=3n Fc=0.5 Bv=44 Ibv=250u Nbv=1 mfg=NXP ksubthres=.1 Vds=40 * Ron=12m Qg=15n)
+                                                                                                                                                                                                                  ^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(871): Syntax error (unexpected input).
+.model RSR025N03 VDMOS(Rg=28 Vto=1.95 Rd=9m Rs=30m Rb=23.292m Kp=11.5+ Lambda=0.05 Cgdmin=20p Cgdmax=170p A=0.5 Cgso=130p Is=627.79f N=1.045 Cjo=45.181p M=307.53m Vj=760.23m TT=15n ksubthres=.1 mfg=Rohm Vds=30 Ron=50m Qg=2.9n)
+                                                                             ^^^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(871): No such parameter defined.
+.model RSR025N03 VDMOS(Rg=28 Vto=1.95 Rd=9m Rs=30m Rb=23.292m Kp=11.5+ Lambda=0.05 Cgdmin=20p Cgdmax=170p A=0.5 Cgso=130p Is=627.79f N=1.045 Cjo=45.181p M=307.53m Vj=760.23m TT=15n ksubthres=.1 mfg=Rohm Vds=30 Ron=50m Qg=2.9n)
+                                                                       ^^^^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(1183): Syntax error: Unexpected input.
+.model SQS405EN VDMOS(pchan Kp=45.4201 Rs=0.0001 Rd=0.0077 Rg=2.37 Vto=-0.92 lambda=0.01 Cgdmax=4064p Cgdmin=400p Cgs=1500p TT=85n Is=1.94E-08 N=0.998 Rb=0.011799 M=0.37 VJ=0.1 Cjo=102.3pF mfg=Vishay Vds=-12 Ron=0.02 Qg=49.8n)6
+                                                                                                                                                                                                                                  ^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(1066): Ignoring unknown model parameter. This may or may not be a problem.
+.model AONR21321 VDMOS(pchan Kp=16.4601 RS=0.0033 Rd=0.0025 Rg=5.0 Vto=-1.9 mtriode=0.85 Ksubthres=0.01 Lambda=0.05 Cgdmax=657p Cggdmin=125p Cgs=1025p tt=14n Aa=0.46 Is=3.49E-12 N=1.048 Rb=0.005291 M=1.585 Vj=7.15 Cjo=180.0pF mfg=AOS Vds=-30 Ron=13.5m Qg=11n)
+                                                                                                                               ^^^^^^^^^^^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(1066): Ignoring unknown model parameter. This may or may not be a problem.
+.model AONR21321 VDMOS(pchan Kp=16.4601 RS=0.0033 Rd=0.0025 Rg=5.0 Vto=-1.9 mtriode=0.85 Ksubthres=0.01 Lambda=0.05 Cgdmax=657p Cggdmin=125p Cgs=1025p tt=14n Aa=0.46 Is=3.49E-12 N=1.048 Rb=0.005291 M=1.585 Vj=7.15 Cjo=180.0pF mfg=AOS Vds=-30 Ron=13.5m Qg=11n)
+                                                                                                                                                             ^^^^^^^^
+C:\users\skole\AppData\Local\LTspice\lib\cmp\standard.mos(1085): Ignoring unknown model parameter. This may or may not be a problem.
+.model AON6280 VDMOS(Kp=118 Rs=0.3m Rd=0.0018 Rg=0.7 Vto=3.41 VtoTc=-4m Bex=-1.8 mtriode=1.5 Ksubthres=0.1 Lambda=0.1 Cgdmax=1194p Cgdmin=54p CgsS=3864p tt=52n A=0.33 Is=2.06E-12 N=1.005 Rb=0.000913 M=1.045 Vj=9.12 Cjo=3000.0pF mfg=AOS Vds=80 Ron=4m Qg=68n)
+                                                                                                                                             ^^^^^^^^^^^
