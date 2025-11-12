@@ -5,6 +5,260 @@
 	(uuid "b086024b-9484-4eb2-8815-7890030857b0")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Operational:MCP6002-xP"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MCP6002-xP"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP6002-xP_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6002-xP_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "MCP6002-xP_3_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Analog_Switch:CD4066BE"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1317,6 +1571,18 @@
 		)
 	)
 	(junction
+		(at 170.18 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12f34826-1769-41b1-a83d-968a56d46b7a")
+	)
+	(junction
+		(at 208.28 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13f1db48-b389-4e64-828c-7492fb412dd4")
+	)
+	(junction
 		(at 104.14 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1327,6 +1593,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d6b2d75-1748-45e8-9f8b-932e54e37076")
+	)
+	(junction
+		(at 127 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47b47ebb-01fa-4777-869d-dc76ed04aef5")
 	)
 	(junction
 		(at 60.96 77.47)
@@ -1388,6 +1660,46 @@
 	)
 	(wire
 		(pts
+			(xy 127 50.8) (xy 170.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b986a2-debc-4415-b69b-336a134ca46a")
+	)
+	(wire
+		(pts
+			(xy 208.28 60.96) (xy 186.69 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4809d17a-30cd-42a7-bf17-50d059abf0fa")
+	)
+	(wire
+		(pts
+			(xy 87.63 50.8) (xy 127 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62991f00-acf7-41f6-9c28-d4b9ddfaa2f5")
+	)
+	(wire
+		(pts
+			(xy 186.69 55.88) (xy 189.23 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69ecaa37-5e2f-4fb8-839f-11b8717b16e3")
+	)
+	(wire
+		(pts
 			(xy 104.14 81.28) (xy 104.14 87.63)
 		)
 		(stroke
@@ -1395,6 +1707,26 @@
 			(type default)
 		)
 		(uuid "73c76b0a-85cb-413e-812e-229be762a36a")
+	)
+	(wire
+		(pts
+			(xy 186.69 60.96) (xy 186.69 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f5e305-0626-4eb6-aa0d-8dfb1e07fa95")
+	)
+	(wire
+		(pts
+			(xy 208.28 53.34) (xy 208.28 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f40e717-bd73-4c91-a362-365427301b62")
 	)
 	(wire
 		(pts
@@ -1408,6 +1740,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 77.47) (xy 87.63 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6bd2ec7-86a4-46e2-9a11-56f470c7d892")
+	)
+	(wire
+		(pts
 			(xy 142.24 77.47) (xy 142.24 82.55)
 		)
 		(stroke
@@ -1415,6 +1757,36 @@
 			(type default)
 		)
 		(uuid "c6043bcf-f724-4203-98fe-c3538171abcc")
+	)
+	(wire
+		(pts
+			(xy 208.28 53.34) (xy 215.9 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf68a968-b9c4-4c54-9691-ec38f16d0745")
+	)
+	(wire
+		(pts
+			(xy 204.47 53.34) (xy 208.28 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1f839d9-0f90-4ff7-a274-5615c539fc22")
+	)
+	(wire
+		(pts
+			(xy 170.18 50.8) (xy 189.23 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d340cd8b-e88d-47b6-9f42-a3a6c7aef60e")
 	)
 	(wire
 		(pts
@@ -1428,6 +1800,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 50.8) (xy 170.18 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e440ed6e-8592-489d-9a0f-45d7d4ae04ed")
+	)
+	(wire
+		(pts
 			(xy 142.24 82.55) (xy 154.94 82.55)
 		)
 		(stroke
@@ -1435,6 +1817,27 @@
 			(type default)
 		)
 		(uuid "e889a25a-ec92-4d22-8314-8af95b53236b")
+	)
+	(wire
+		(pts
+			(xy 127 50.8) (xy 127 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f11da3a6-736d-4b88-b97c-e170a328c6f2")
+	)
+	(hierarchical_label "sp_v"
+		(shape output)
+		(at 215.9 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "04c34be6-b354-4ad3-9534-53c40e815475")
 	)
 	(hierarchical_label "set_T1"
 		(shape input)
@@ -1446,39 +1849,6 @@
 			(justify right)
 		)
 		(uuid "636f8747-25cf-4d81-b203-5846258167a4")
-	)
-	(hierarchical_label "spT2"
-		(shape output)
-		(at 127 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7161256a-eb24-4cbb-b1ec-778df8c57d78")
-	)
-	(hierarchical_label "spT3"
-		(shape output)
-		(at 170.18 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8d43f3ec-4724-49b1-9af2-da630582fabe")
-	)
-	(hierarchical_label "spT1"
-		(shape output)
-		(at 87.63 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c54ba47a-c1da-47b3-a47e-9de099656a2c")
 	)
 	(hierarchical_label "set_T3"
 		(shape input)
@@ -2627,6 +2997,92 @@
 			(project ""
 				(path "/885246d9-02f0-4358-93fd-1326e0857a4e/17a4b12c-608e-45ca-9958-66c1dffd3a55"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:MCP6002-xP")
+		(at 196.85 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b388ab25-ac17-4731-b0c1-3c750335c688")
+		(property "Reference" "U8"
+			(at 196.85 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP6002-xP"
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+			(at 196.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MHz, Low-Power Op Amp, DIP-8"
+			(at 196.85 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "7fcd51d2-21fa-42c9-b9aa-348cd890722d")
+		)
+		(pin "8"
+			(uuid "feb486c8-0e94-4a1a-9013-490b93a6c70c")
+		)
+		(pin "1"
+			(uuid "83462889-4a5d-4d33-bfcb-d52ef1739a31")
+		)
+		(pin "2"
+			(uuid "ff2469a3-c0f3-44ca-9a20-2f4ffbfccba5")
+		)
+		(pin "3"
+			(uuid "ee6591bc-e770-474e-8803-ea530b849a8f")
+		)
+		(pin "4"
+			(uuid "538522df-789d-4277-a9cc-3d0fc8f319da")
+		)
+		(pin "7"
+			(uuid "e6a0f46f-8d1b-41fb-b713-46ef22e75768")
+		)
+		(pin "6"
+			(uuid "44a2df4f-bf0d-42e6-9f52-fd5d796808c1")
+		)
+		(instances
+			(project "samlet pcb"
+				(path "/885246d9-02f0-4358-93fd-1326e0857a4e/17a4b12c-608e-45ca-9958-66c1dffd3a55"
+					(reference "U8")
 					(unit 1)
 				)
 			)
