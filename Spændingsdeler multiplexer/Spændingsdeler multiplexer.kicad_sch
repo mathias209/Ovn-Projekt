@@ -1875,15 +1875,15 @@
 		(uuid "f92dcc71-3ce6-4977-9e75-b8b49a1639c1")
 	)
 	(no_connect
-		(at 252.73 92.71)
+		(at 189.23 31.75)
 		(uuid "01ca2e76-b54f-41e8-8d5f-f98c1c0c12fe")
 	)
 	(no_connect
-		(at 237.49 92.71)
+		(at 173.99 31.75)
 		(uuid "9da74639-4ead-4d33-a208-2b97f1e2a1ec")
 	)
 	(no_connect
-		(at 245.11 97.79)
+		(at 181.61 36.83)
 		(uuid "f7b6bae5-7912-4a7c-83c5-f0824f6cf7cc")
 	)
 	(wire
@@ -2147,22 +2147,22 @@
 		(uuid "09091d21-8bfb-4ace-82c2-2c12b89876d5")
 	)
 	(label "SpT2"
-		(at 227.33 87.63 0)
+		(at 154.94 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "148e36e0-56a1-4837-9533-b2bbcfcf6518")
 	)
 	(label "SpT3"
-		(at 227.33 95.25 0)
+		(at 147.32 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "448e25a7-de5c-435b-b94a-36a704c713c1")
 	)
@@ -2187,22 +2187,22 @@
 		(uuid "8e6b16a5-9b5c-4ff7-9c0e-b323a2284c7e")
 	)
 	(label "SpT1"
-		(at 227.33 85.09 0)
+		(at 157.48 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9a8fc3c8-de99-4d26-b09e-3578db23d6c5")
 	)
 	(label "T1"
-		(at 227.33 82.55 0)
+		(at 160.02 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b15dcb89-1ac4-4804-a664-e986f2e9ad56")
 	)
@@ -2217,12 +2217,12 @@
 		(uuid "b46b0f51-b141-4ed7-9bf5-4abc80316268")
 	)
 	(label "T3"
-		(at 227.33 92.71 0)
+		(at 149.86 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c08ba202-f679-432f-9452-66308caa20be")
 	)
@@ -2237,12 +2237,12 @@
 		(uuid "c47c4530-d54a-41ae-8b2e-0cc8e10e327d")
 	)
 	(label "T2"
-		(at 227.33 90.17 0)
+		(at 152.4 101.6 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "cb7d0211-6484-4552-a973-a8d7522b3933")
 	)
@@ -2258,7 +2258,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Pin")
-		(at 222.25 85.09 0)
+		(at 157.48 96.52 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2267,7 +2267,7 @@
 		(fields_autoplaced yes)
 		(uuid "06029b41-2234-4114-97d3-64a2c35c29cd")
 		(property "Reference" "J2"
-			(at 222.885 72.39 0)
+			(at 170.18 97.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2275,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Pin"
-			(at 222.885 74.93 0)
+			(at 167.64 97.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2283,7 +2283,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
-			(at 222.25 85.09 0)
+			(at 157.48 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2292,7 +2292,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 85.09 0)
+			(at 157.48 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2301,7 +2301,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 222.25 85.09 0)
+			(at 157.48 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +2655,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 227.33 77.47 270)
+		(at 165.1 101.6 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2664,7 +2664,7 @@
 		(fields_autoplaced yes)
 		(uuid "4416bb17-9c58-48d7-b4f1-a13e0e4a1779")
 		(property "Reference" "#PWR07"
-			(at 223.52 77.47 0)
+			(at 165.1 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2673,7 +2673,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 231.14 77.4699 90)
+			(at 165.1001 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2682,7 +2682,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 77.47 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2691,7 +2691,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 77.47 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2700,7 +2700,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 227.33 77.47 0)
+			(at 165.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2792,7 +2792,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 80.01 90)
+		(at 162.56 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2801,7 +2801,7 @@
 		(fields_autoplaced yes)
 		(uuid "a006cdcd-a172-4605-8669-24226138570f")
 		(property "Reference" "#PWR08"
-			(at 233.68 80.01 0)
+			(at 162.56 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,7 +2810,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 231.14 80.0099 90)
+			(at 162.5601 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,7 +2819,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 80.01 0)
+			(at 162.56 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,7 +2828,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 80.01 0)
+			(at 162.56 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +2837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 80.01 0)
+			(at 162.56 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,7 +3713,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:CD4066BE")
-		(at 245.11 92.71 0)
+		(at 181.61 31.75 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3722,7 +3722,7 @@
 		(fields_autoplaced yes)
 		(uuid "eecf65a1-699f-4e5d-9fdc-68968c187494")
 		(property "Reference" "U1"
-			(at 245.11 85.09 0)
+			(at 181.61 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,7 +3730,7 @@
 			)
 		)
 		(property "Value" "CD4066BE"
-			(at 245.11 87.63 0)
+			(at 181.61 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3738,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 245.11 95.25 0)
+			(at 181.61 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3747,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/cd4066b.pdf"
-			(at 245.11 92.71 0)
+			(at 181.61 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3756,7 +3756,7 @@
 			)
 		)
 		(property "Description" "Quad 20V analog SPST 1:1 switch, DIP-14"
-			(at 245.11 92.71 0)
+			(at 181.61 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3765,46 +3765,46 @@
 			)
 		)
 		(pin "10"
-			(uuid "e452a5f3-045c-464b-bf5b-b0c321ec7c66")
+			(uuid "e452a5f3-045c-464b-bf5b-b0c321ec7c67")
 		)
 		(pin "4"
-			(uuid "1a4d905f-1496-4188-b2b3-a62dc0e912bb")
+			(uuid "1a4d905f-1496-4188-b2b3-a62dc0e912bc")
 		)
 		(pin "3"
-			(uuid "65a45252-c4bb-44ea-89cb-d65bd3b798e0")
+			(uuid "65a45252-c4bb-44ea-89cb-d65bd3b798e1")
 		)
 		(pin "6"
-			(uuid "8b2e3b7f-613f-4d94-b2ca-f3a19f41f1d6")
+			(uuid "8b2e3b7f-613f-4d94-b2ca-f3a19f41f1d7")
 		)
 		(pin "13"
-			(uuid "8f0d4bd0-2f27-4a79-93b4-90bcbd8efcc0")
+			(uuid "8f0d4bd0-2f27-4a79-93b4-90bcbd8efcc1")
 		)
 		(pin "5"
-			(uuid "e95e0fae-ab7b-4408-85a9-58db0d303522")
+			(uuid "e95e0fae-ab7b-4408-85a9-58db0d303523")
 		)
 		(pin "8"
-			(uuid "00b95840-5289-4225-b48f-67dbaed6d909")
+			(uuid "00b95840-5289-4225-b48f-67dbaed6d90a")
 		)
 		(pin "11"
-			(uuid "8e2a62c5-58eb-470e-8a1b-d7555064b89b")
+			(uuid "8e2a62c5-58eb-470e-8a1b-d7555064b89c")
 		)
 		(pin "12"
-			(uuid "8602c598-2eb6-45e6-9185-dd85a0b16a9f")
+			(uuid "8602c598-2eb6-45e6-9185-dd85a0b16aa0")
 		)
 		(pin "14"
-			(uuid "05421fbe-3387-4475-a649-05926cc17ed0")
+			(uuid "05421fbe-3387-4475-a649-05926cc17ed1")
 		)
 		(pin "7"
-			(uuid "0ffee668-0259-49c3-a1c0-6c56fd204eb6")
+			(uuid "0ffee668-0259-49c3-a1c0-6c56fd204eb7")
 		)
 		(pin "9"
-			(uuid "affbc80f-7a17-411e-9dec-0334f964da33")
+			(uuid "affbc80f-7a17-411e-9dec-0334f964da34")
 		)
 		(pin "1"
-			(uuid "b4d06d5e-7c66-459c-9b01-4c595f422037")
+			(uuid "b4d06d5e-7c66-459c-9b01-4c595f422038")
 		)
 		(pin "2"
-			(uuid "408f4fe7-f5d9-4829-a4b4-2492df776fae")
+			(uuid "408f4fe7-f5d9-4829-a4b4-2492df776faf")
 		)
 		(instances
 			(project ""
