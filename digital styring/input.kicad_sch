@@ -1945,22 +1945,10 @@
 		)
 	)
 	(junction
-		(at 20.32 101.6)
+		(at 46.99 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0cd2b722-9f6d-4224-a346-e955eb8e823d")
-	)
-	(junction
-		(at 46.99 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23b6b2c8-5ee7-4b31-97e0-5063ff35af32")
-	)
-	(junction
-		(at 36.83 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48b0e50b-15cd-4a4d-955f-fdee42f6e2d9")
+		(uuid "7326e022-9fd9-4f44-9ad8-0ed5f633c6f1")
 	)
 	(junction
 		(at 36.83 68.58)
@@ -1969,16 +1957,28 @@
 		(uuid "75dde441-f491-4eed-b25c-bc0072023a2d")
 	)
 	(junction
-		(at 74.93 48.26)
+		(at 60.96 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85dc4e32-837e-44ae-9ada-5bac70c56c9f")
 	)
 	(junction
-		(at 100.33 34.29)
+		(at 36.83 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d964470-671a-4cdb-b3a7-4fbf33974506")
+	)
+	(junction
+		(at 86.36 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac87bf92-f20b-45b9-84b3-fe4dd8c4623d")
+	)
+	(junction
+		(at 20.32 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2a5dc09-6a26-40bf-a6f2-4933ecb59bc4")
 	)
 	(junction
 		(at 20.32 53.34)
@@ -1987,16 +1987,16 @@
 		(uuid "bcf8d145-5c69-45c7-9a77-c195f6d30c7d")
 	)
 	(junction
-		(at 52.07 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd51aa1b-834f-4e3e-b27f-8be2ed1c7bad")
-	)
-	(junction
 		(at 46.99 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf271a0a-26ce-4dff-b6cd-0fdc56b15e97")
+	)
+	(junction
+		(at 52.07 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca08ad2c-2aa7-4a17-9d2f-3b32d7861bf8")
 	)
 	(junction
 		(at 58.42 68.58)
@@ -2006,7 +2006,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 68.58) (xy 36.83 133.35)
+			(xy 36.83 68.58) (xy 36.83 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2016,7 +2016,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 121.92) (xy 121.92 133.35)
+			(xy 100.33 102.87) (xy 100.33 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2026,7 +2026,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 39.37) (xy 106.68 39.37)
+			(xy 81.28 39.37) (xy 92.71 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2036,23 +2036,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 34.29) (xy 100.33 57.15)
+			(xy 86.36 34.29) (xy 86.36 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0335a343-a263-4315-8828-4fc49a90989b")
-	)
-	(wire
-		(pts
-			(xy 36.83 133.35) (xy 36.83 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0428fd59-c15b-4630-91fd-0ecdceac1716")
 	)
 	(wire
 		(pts
@@ -2066,7 +2056,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 119.38) (xy 106.68 119.38)
+			(xy 46.99 100.33) (xy 85.09 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2076,7 +2066,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 124.46) (xy 106.68 124.46)
+			(xy 36.83 114.3) (xy 36.83 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af8017c-a2a7-442e-97c8-661d0d41e1f6")
+	)
+	(wire
+		(pts
+			(xy 81.28 105.41) (xy 85.09 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2086,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 63.5) (xy 80.01 63.5)
+			(xy 60.96 63.5) (xy 66.04 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2096,7 +2096,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 68.58) (xy 80.01 68.58)
+			(xy 58.42 68.58) (xy 66.04 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2106,7 +2106,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 36.83) (xy 121.92 44.45)
+			(xy 107.95 36.83) (xy 107.95 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2126,7 +2126,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 49.53) (xy 128.27 49.53)
+			(xy 107.95 49.53) (xy 109.22 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2136,7 +2136,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 151.13) (xy 105.41 151.13)
+			(xy 80.01 123.19) (xy 83.82 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2146,7 +2146,17 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 146.05) (xy 105.41 146.05)
+			(xy 52.07 95.25) (xy 52.07 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f1ed9d-e1cf-4074-b46c-c9ca847bcb67")
+	)
+	(wire
+		(pts
+			(xy 20.32 118.11) (xy 83.82 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2156,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 25.4) (xy 52.07 106.68)
+			(xy 52.07 25.4) (xy 52.07 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2166,7 +2176,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 59.69) (xy 121.92 49.53)
+			(xy 107.95 59.69) (xy 107.95 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2176,7 +2186,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 68.58) (xy 58.42 87.63)
+			(xy 58.42 68.58) (xy 58.42 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2186,7 +2196,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 99.06) (xy 100.33 99.06)
+			(xy 81.28 87.63) (xy 86.36 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2196,7 +2206,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 128.27) (xy 80.01 128.27)
+			(xy 26.67 109.22) (xy 66.04 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2206,7 +2216,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 101.6) (xy 80.01 101.6)
+			(xy 20.32 90.17) (xy 66.04 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2216,7 +2226,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 53.34) (xy 20.32 101.6)
+			(xy 20.32 53.34) (xy 20.32 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2226,7 +2236,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 66.04) (xy 95.25 62.23)
+			(xy 81.28 66.04) (xy 81.28 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2236,7 +2246,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 48.26) (xy 46.99 92.71)
+			(xy 46.99 48.26) (xy 46.99 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2246,7 +2256,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 44.45) (xy 128.27 44.45)
+			(xy 107.95 44.45) (xy 109.22 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2256,17 +2266,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 101.6) (xy 20.32 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63307acd-5e78-4e76-bc1d-c5260e0a7ef2")
-	)
-	(wire
-		(pts
-			(xy 58.42 87.63) (xy 80.01 87.63)
+			(xy 58.42 76.2) (xy 66.04 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2276,7 +2276,17 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 48.26) (xy 74.93 63.5)
+			(xy 20.32 90.17) (xy 20.32 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6702ec58-df89-48d7-9bf5-83c4901e9c11")
+	)
+	(wire
+		(pts
+			(xy 60.96 48.26) (xy 60.96 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2296,7 +2306,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 48.26) (xy 80.01 48.26)
+			(xy 60.96 48.26) (xy 66.04 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2306,17 +2316,17 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 92.71) (xy 46.99 119.38)
+			(xy 46.99 81.28) (xy 46.99 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7656d5fe-565f-44a7-a434-322cb7bba0bb")
+		(uuid "764a39dc-d244-412f-a52b-2300c52dc1f3")
 	)
 	(wire
 		(pts
-			(xy 95.25 104.14) (xy 95.25 99.06)
+			(xy 81.28 92.71) (xy 81.28 87.63)
 		)
 		(stroke
 			(width 0)
@@ -2326,7 +2336,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 161.29) (xy 93.98 151.13)
+			(xy 80.01 133.35) (xy 80.01 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2336,7 +2346,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 50.8) (xy 95.25 39.37)
+			(xy 81.28 50.8) (xy 81.28 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2346,7 +2356,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 130.81) (xy 95.25 124.46)
+			(xy 81.28 111.76) (xy 81.28 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2356,7 +2366,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 25.4) (xy 26.67 128.27)
+			(xy 26.67 25.4) (xy 26.67 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2366,7 +2376,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 57.15) (xy 106.68 57.15)
+			(xy 86.36 57.15) (xy 92.71 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2386,7 +2396,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 133.35) (xy 134.62 133.35)
+			(xy 100.33 107.95) (xy 102.87 107.95)
 		)
 		(stroke
 			(width 0)
@@ -2396,7 +2406,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 34.29) (xy 100.33 34.29)
+			(xy 59.69 34.29) (xy 86.36 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2406,7 +2416,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 133.35) (xy 80.01 133.35)
+			(xy 36.83 114.3) (xy 66.04 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2426,7 +2436,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 138.43) (xy 134.62 138.43)
+			(xy 99.06 113.03) (xy 102.87 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2436,7 +2446,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 34.29) (xy 106.68 34.29)
+			(xy 86.36 34.29) (xy 92.71 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2446,7 +2456,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 158.75) (xy 78.74 158.75)
+			(xy 36.83 130.81) (xy 64.77 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2456,7 +2466,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 53.34) (xy 80.01 53.34)
+			(xy 20.32 53.34) (xy 66.04 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2466,7 +2476,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 148.59) (xy 120.65 138.43)
+			(xy 99.06 120.65) (xy 99.06 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2476,17 +2486,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 106.68) (xy 52.07 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0d0b085-5881-44b4-966b-374c73cb250b")
-	)
-	(wire
-		(pts
-			(xy 95.25 90.17) (xy 95.25 93.98)
+			(xy 81.28 78.74) (xy 81.28 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2496,7 +2496,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 163.83) (xy 78.74 163.83)
+			(xy 52.07 135.89) (xy 64.77 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2506,7 +2506,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 93.98) (xy 100.33 93.98)
+			(xy 81.28 82.55) (xy 86.36 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2516,7 +2516,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 106.68) (xy 80.01 106.68)
+			(xy 52.07 95.25) (xy 66.04 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2526,7 +2526,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 92.71) (xy 80.01 92.71)
+			(xy 46.99 81.28) (xy 66.04 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2536,7 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 62.23) (xy 106.68 62.23)
+			(xy 81.28 62.23) (xy 92.71 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2546,7 +2546,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 48.26) (xy 74.93 48.26)
+			(xy 46.99 48.26) (xy 60.96 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2688,7 +2688,7 @@
 	)
 	(hierarchical_label "D0"
 		(shape output)
-		(at 143.51 46.99 0)
+		(at 124.46 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2699,7 +2699,7 @@
 	)
 	(hierarchical_label "D1"
 		(shape output)
-		(at 115.57 96.52 0)
+		(at 101.6 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2710,7 +2710,7 @@
 	)
 	(hierarchical_label "D2"
 		(shape output)
-		(at 149.86 135.89 0)
+		(at 118.11 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2721,7 +2721,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 113.03 148.59 0)
+		(at 91.44 120.65 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2730,7 +2730,7 @@
 		(fields_autoplaced yes)
 		(uuid "447c2361-b1d6-485c-9238-4b26b3dce840")
 		(property "Reference" "U4"
-			(at 113.0217 139.7 0)
+			(at 91.4317 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +2738,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 113.0217 142.24 0)
+			(at 91.4317 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2746,7 +2746,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 113.03 148.59 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2755,7 +2755,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 113.03 148.59 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,7 +2764,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 113.03 148.59 0)
+			(at 91.44 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2825,7 +2825,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 107.95 96.52 0)
+		(at 93.98 85.09 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2834,7 +2834,7 @@
 		(fields_autoplaced yes)
 		(uuid "4adee67e-4797-4cbc-9951-12ebcc09047f")
 		(property "Reference" "U5"
-			(at 107.95 87.63 0)
+			(at 93.98 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2842,7 +2842,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 107.95 90.17 0)
+			(at 93.98 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,7 +2850,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 107.95 96.52 0)
+			(at 93.98 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2859,7 +2859,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 107.95 96.52 0)
+			(at 93.98 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +2868,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 107.95 96.52 0)
+			(at 93.98 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2929,7 +2929,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 87.63 66.04 0)
+		(at 73.66 66.04 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2938,7 +2938,7 @@
 		(fields_autoplaced yes)
 		(uuid "5970c2bf-e75d-44d7-b824-a30fa2b49080")
 		(property "Reference" "U2"
-			(at 87.6217 57.15 0)
+			(at 73.6517 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2946,7 +2946,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 87.6217 59.69 0)
+			(at 73.6517 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +2954,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 87.63 66.04 0)
+			(at 73.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +2963,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 87.63 66.04 0)
+			(at 73.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,7 +2972,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 87.63 66.04 0)
+			(at 73.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,7 +3033,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 87.63 50.8 0)
+		(at 73.66 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3042,7 +3042,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ac559f1-6c27-466d-8257-06c6e5909ee8")
 		(property "Reference" "U2"
-			(at 87.6217 41.91 0)
+			(at 73.6517 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3050,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 87.6217 44.45 0)
+			(at 73.6517 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,7 +3058,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 87.63 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +3067,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 87.63 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3076,7 +3076,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 87.63 50.8 0)
+			(at 73.66 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3137,16 +3137,15 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 87.63 90.17 0)
+		(at 73.66 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8f343fe5-1d9a-46af-8451-f5afbab985d4")
 		(property "Reference" "U3"
-			(at 87.6217 81.28 0)
+			(at 72.898 80.518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,7 +3153,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 87.6217 83.82 0)
+			(at 72.898 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3162,7 +3161,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 87.63 90.17 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3171,7 +3170,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 87.63 90.17 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3179,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 87.63 90.17 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3240,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 86.36 161.29 0)
+		(at 72.39 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3250,7 +3249,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bab4bf2-4c26-4485-b619-fed994bc2a3d")
 		(property "Reference" "U4"
-			(at 86.3517 152.4 0)
+			(at 72.3817 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3257,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 86.3517 154.94 0)
+			(at 72.3817 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3266,7 +3265,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 86.36 161.29 0)
+			(at 72.39 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +3274,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 86.36 161.29 0)
+			(at 72.39 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3283,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 86.36 161.29 0)
+			(at 72.39 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3345,7 +3344,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 135.89 46.99 0)
+		(at 116.84 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3354,7 +3353,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7459344-115f-4a53-af7f-092459a5fd58")
 		(property "Reference" "U5"
-			(at 135.89 38.1 0)
+			(at 116.84 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,7 +3361,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 135.89 40.64 0)
+			(at 116.84 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3370,7 +3369,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 135.89 46.99 0)
+			(at 116.84 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,7 +3378,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 135.89 46.99 0)
+			(at 116.84 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,7 +3387,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 135.89 46.99 0)
+			(at 116.84 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +3448,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 114.3 59.69 0)
+		(at 100.33 59.69 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3458,7 +3457,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc1eb152-a3d4-49ab-8443-09a72dce1e03")
 		(property "Reference" "U2"
-			(at 114.2917 50.8 0)
+			(at 100.3217 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3466,7 +3465,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 114.2917 53.34 0)
+			(at 100.3217 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,7 +3473,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 114.3 59.69 0)
+			(at 100.33 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3483,7 +3482,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 114.3 59.69 0)
+			(at 100.33 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3492,7 +3491,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 114.3 59.69 0)
+			(at 100.33 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3553,7 +3552,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 114.3 36.83 0)
+		(at 100.33 36.83 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3562,7 +3561,7 @@
 		(fields_autoplaced yes)
 		(uuid "c76cf5d3-0a2a-4ffe-841c-bd940ca916b9")
 		(property "Reference" "U2"
-			(at 114.2917 27.94 0)
+			(at 100.3217 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3570,7 +3569,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 114.2917 30.48 0)
+			(at 100.3217 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3578,7 +3577,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 114.3 36.83 0)
+			(at 100.33 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +3586,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 114.3 36.83 0)
+			(at 100.33 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3596,7 +3595,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 114.3 36.83 0)
+			(at 100.33 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3657,7 +3656,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 142.24 135.89 0)
+		(at 110.49 110.49 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3666,7 +3665,7 @@
 		(fields_autoplaced yes)
 		(uuid "c97ba1b9-2e8b-40d8-bc85-6da8c3f1afec")
 		(property "Reference" "U5"
-			(at 142.24 127 0)
+			(at 110.49 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3674,7 +3673,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 142.24 129.54 0)
+			(at 110.49 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3682,7 +3681,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 142.24 135.89 0)
+			(at 110.49 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +3690,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 142.24 135.89 0)
+			(at 110.49 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3699,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 142.24 135.89 0)
+			(at 110.49 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3760,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 114.3 121.92 0)
+		(at 92.71 102.87 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3770,7 +3769,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce604a82-8cb2-47a0-8bd9-4de5e080a4ce")
 		(property "Reference" "U3"
-			(at 114.2917 113.03 0)
+			(at 92.7017 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3777,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 114.2917 115.57 0)
+			(at 92.7017 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3786,7 +3785,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 114.3 121.92 0)
+			(at 92.71 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3795,7 +3794,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 114.3 121.92 0)
+			(at 92.71 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3804,7 +3803,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 114.3 121.92 0)
+			(at 92.71 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3865,7 +3864,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 87.63 104.14 0)
+		(at 73.66 92.71 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3874,7 +3873,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8d4aaa9-b79a-4970-8b60-252a92eda492")
 		(property "Reference" "U3"
-			(at 87.6217 95.25 0)
+			(at 73.6517 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3882,7 +3881,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 87.6217 97.79 0)
+			(at 73.6517 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,7 +3889,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 87.63 104.14 0)
+			(at 73.66 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3899,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 87.63 104.14 0)
+			(at 73.66 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3908,7 +3907,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 87.63 104.14 0)
+			(at 73.66 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3969,7 +3968,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 87.63 130.81 0)
+		(at 73.66 111.76 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3978,7 +3977,7 @@
 		(fields_autoplaced yes)
 		(uuid "f49256b7-5762-4a31-906f-fc43631e3217")
 		(property "Reference" "U3"
-			(at 87.6217 121.92 0)
+			(at 73.6517 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3986,7 +3985,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 87.6217 124.46 0)
+			(at 73.6517 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +3993,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 87.63 130.81 0)
+			(at 73.66 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4003,7 +4002,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 87.63 130.81 0)
+			(at 73.66 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,7 +4011,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 87.63 130.81 0)
+			(at 73.66 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)

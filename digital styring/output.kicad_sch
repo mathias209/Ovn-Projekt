@@ -977,7 +977,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 60.96) (xy 67.31 60.96)
+			(xy 39.37 52.07) (xy 36.83 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d2374b-3840-48d9-8837-862bdd8681c4")
+	)
+	(wire
+		(pts
+			(xy 52.07 41.91) (xy 53.34 41.91)
 		)
 		(stroke
 			(width 0)
@@ -997,13 +1007,23 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 48.26) (xy 49.53 66.04)
+			(xy 49.53 46.99) (xy 49.53 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8831dfcf-c824-4530-b999-c7ec3dca37ef")
+	)
+	(wire
+		(pts
+			(xy 39.37 36.83) (xy 36.83 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92a35afb-2939-483a-b4fa-486a07475ea6")
 	)
 	(wire
 		(pts
@@ -1017,7 +1037,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 66.04) (xy 67.31 66.04)
+			(xy 49.53 46.99) (xy 53.34 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1027,7 +1047,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 40.64) (xy 52.07 60.96)
+			(xy 52.07 41.91) (xy 52.07 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1125,7 +1145,7 @@
 	)
 	(hierarchical_label "set2"
 		(shape output)
-		(at 82.55 63.5 0)
+		(at 68.58 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1136,7 +1156,7 @@
 	)
 	(hierarchical_label "set3"
 		(shape output)
-		(at 36.83 52.07 0)
+		(at 39.37 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1147,7 +1167,7 @@
 	)
 	(hierarchical_label "set1"
 		(shape output)
-		(at 36.83 36.83 0)
+		(at 39.37 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1158,7 +1178,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 74.93 63.5 0)
+		(at 60.96 44.45 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1167,7 +1187,7 @@
 		(fields_autoplaced yes)
 		(uuid "73cb9514-6029-4479-b35b-397d0cbef206")
 		(property "Reference" "U4"
-			(at 74.9217 54.61 0)
+			(at 60.9517 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1175,7 +1195,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 74.9217 57.15 0)
+			(at 60.9517 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1183,7 +1203,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_LongPads"
-			(at 74.93 63.5 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,7 +1212,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 74.93 63.5 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1201,7 +1221,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 74.93 63.5 0)
+			(at 60.96 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
