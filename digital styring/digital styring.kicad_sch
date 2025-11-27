@@ -4080,6 +4080,28 @@
 			)
 		)
 	)
+	(global_label "Q0'"
+		(shape input)
+		(at 113.03 124.46 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4f47d6db-7733-49a4-b70f-66388b68698f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.03 130.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "C"
 		(shape output)
 		(at 171.45 123.19 0)
