@@ -1,0 +1,10 @@
+in: tis5.csv
+iscale: 0.001
+oscale: 0.001
+start: 0
+end: 100
+oo: pdf,jpg,csv
+yscale: 0.01
+xlabel: tid[s]
+ylabel: temp[C]
+curves: T1

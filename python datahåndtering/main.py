@@ -1,40 +1,117 @@
 import csv
 import matplotlib.pyplot as plt
 import sys
+import re
+import os
 
-if len(sys.argv) == 1:
-    print("filename scale end ifshow")
+keys = {
+        "in": 0,
+        "out": 0,
+        "iscale": 0.001,
+        "oscale": 1,
+        "start": 0,
+        "end": 1000,
+        "oo": [],
+        "yscale": 1,
+        "xlabel": "t",
+        "ylabel": "V",
+        "curves": [],
+        }
+
+cfile = "config.txt"
+if "-c" in sys.argv:
+    cfile = sys.argv[sys.argv.index("-c") + 1]
+
+if not os.path.isfile(cfile):
+    print(f"Error: given config file \"{cfile}\" does not exist, exiting...")
     sys.exit()
+
+with open(cfile, "r") as f:
+    for l in f:
+        sl = l.split(": ")
+        if sl[0] == "oo":
+            for oo in sl[1].split(","):
+                keys["oo"].append(oo.strip())
+        elif sl[0] == "curves":
+            for label in sl[1].split(","):
+                keys["curves"].append(label.strip())
+        elif sl[0] in keys:
+            keys[sl[0]] = sl[1].strip()
+        else:
+            print(f"Warning: key \"{sl[0]}\" is not valid, continuing...")
+
+if keys["oscale"] < keys["iscale"]:
+    print("Error: out scale is larger than in scale, unable to create precision that doesn't exist, exiting...")
+if keys["start"] > keys["end"]:
+    print("Error: start time is larger that end time, exiting...")
 
 maxi = 0
 vals = []
-with open(sys.argv[1], newline='') as csvfile:
+with open(keys["in"], newline='') as csvfile:
     reader = csv.DictReader(csvfile)
+    colnames = []
+    colnames_o = []
+    for i,col in enumerate(next(reader)):
+        if "t0" in col or "tInc" in col or len(col) == 0:
+            continue
+        else:
+            colnames.append(col)
+        if i >= len(keys["curves"]):
+            colnames_o.append(col)
+        else:
+            colnames_o.append(keys["curves"][i])
     for i,row in enumerate(reader):
-        vals.append({"V": row["CH1V"]})
+        vals.append({colnames_o[i]: row[colnames[i]] for i in range(len(colnames_o))})
         maxi = i
 
+stepsize = int(float(keys["oscale"]) / float(keys["iscale"]))
+s_start = int(float(keys["start"]) / float(keys["iscale"]))
+s_end = int(float(keys["end"]) / float(keys["iscale"]))
+
 outvals = []
-scale = int(sys.argv[2]) if len(sys.argv) >= 3 else 1000
 sec = 0
-end = int(sys.argv[3]) if len(sys.argv) >= 4 else maxi
 for i,row in enumerate(vals):
-    if i == end:
+    if i < s_start:
+        continue
+    if i == s_end:
         break
-    if (i % scale == 0):
-        outvals.append({"t": sec, "V": row["V"]})
-        sec += 1 * (scale / 1000)
+    if (i % stepsize == 0):
+        outvals.append({keys["xlabel"]: sec} | {key: float(row[key]) / float(keys["yscale"]) for key in row.keys()})
+        sec += float(keys["oscale"])
 
-with open("out.csv", "w", newline="") as csvfile:
-    fieldnames = ["t", "V"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    for row in outvals:
-        writer.writerow(row)
+name = keys["in"].split(".")[0]
+outname = f"{name}-out"
+if keys["out"] is str:
+    outname = keys["out"]
 
-plt.plot([float(row["t"]) for row in outvals], [float(row["V"]) for row in outvals])
-plt.savefig('plot.png')
-plt.savefig('plot.pdf')
+if "csv" in keys["oo"]:
+    with open(f"{outname}.csv", "w", newline="") as csvfile:
+        fieldnames = [key for key in outvals[0].keys()]
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in outvals:
+            writer.writerow(row)
 
-if len(sys.argv) >= 5 and sys.argv[4] == "show":
+for key in outvals[0].keys():
+    if key != keys["xlabel"]:
+        plt.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key)
+
+plt.title(name, fontsize=20)
+plt.xlabel(keys["xlabel"])
+plt.ylabel(keys["ylabel"])
+plt.legend(loc='upper right')
+
+for oo in keys["oo"]:
+    if oo == "csv":
+        continue
+    plt.savefig(f"{outname}.{oo}")
+
+pltstring = ""
+for key,val in keys.items():
+    pltstring += f"{key}: {val}\n"
+pltstring += f"stepsize: {stepsize}\n"
+
+plt.text(0.91, 0.07, pltstring, fontsize=9, transform=plt.gcf().transFigure)
+
+if "show" in sys.argv:
     plt.show()
