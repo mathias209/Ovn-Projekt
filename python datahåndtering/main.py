@@ -106,12 +106,12 @@ for oo in keys["oo"]:
         continue
     plt.savefig(f"{outname}.{oo}")
 
-pltstring = ""
-for key,val in keys.items():
-    pltstring += f"{key}: {val}\n"
-pltstring += f"stepsize: {stepsize}\n"
-
-plt.text(0.91, 0.07, pltstring, fontsize=9, transform=plt.gcf().transFigure)
-
 if "show" in sys.argv:
+    pltstring = ""
+    for key,val in keys.items():
+        pltstring += f"{key}: {val}\n"
+    pltstring += f"stepsize: {stepsize}\n"
+
+    plt.text(0.91, 0.07, pltstring, fontsize=9, transform=plt.gcf().transFigure)
+
     plt.show()
