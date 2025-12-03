@@ -1,10 +1,10 @@
-in: merged_tis.csv
+in: merged_tis2.csv
 iscale: 0.001
-oscale: 0.001
+oscale: 1
 start: 0
-end: 100
+end: 1000
 oo: pdf,jpg,csv
 yscale: 0.01,1
 xlabel: tid[s]
 ylabel: temp[C],Volt
-curves: T1,2Hz
+curves: T1,2Hz,sorted T1
