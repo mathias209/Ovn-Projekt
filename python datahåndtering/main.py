@@ -12,9 +12,9 @@ keys = {
         "start": 0,
         "end": 1000,
         "oo": [],
-        "yscale": 1,
+        "yscale": [],
         "xlabel": "t",
-        "ylabel": "V",
+        "ylabel": [],
         "curves": [],
         }
 
@@ -35,6 +35,12 @@ with open(cfile, "r") as f:
         elif sl[0] == "curves":
             for label in sl[1].split(","):
                 keys["curves"].append(label.strip())
+        elif sl[0] == "yscale":
+            for label in sl[1].split(","):
+                keys["yscale"].append(float(label.strip()))
+        elif sl[0] == "ylabel":
+            for label in sl[1].split(","):
+                keys["ylabel"].append(label.strip())
         elif sl[0] in keys:
             keys[sl[0]] = sl[1].strip()
         else:
@@ -68,6 +74,10 @@ stepsize = int(float(keys["oscale"]) / float(keys["iscale"]))
 s_start = int(float(keys["start"]) / float(keys["iscale"]))
 s_end = int(float(keys["end"]) / float(keys["iscale"]))
 
+for i,key in enumerate(vals[0].keys()):
+    if key != keys["xlabel"] and i > len(keys["yscale"]):
+            yscale[i] = 1
+
 outvals = []
 sec = 0
 for i,row in enumerate(vals):
@@ -76,7 +86,7 @@ for i,row in enumerate(vals):
     if i == s_end:
         break
     if (i % stepsize == 0):
-        outvals.append({keys["xlabel"]: sec} | {key: float(row[key]) / float(keys["yscale"]) for key in row.keys()})
+        outvals.append({keys["xlabel"]: sec} | {key: float(row[key]) / float(keys["yscale"][n]) for n,key in enumerate(row.keys())})
         sec += float(keys["oscale"])
 
 name = keys["in"].split(".")[0]
@@ -92,14 +102,33 @@ if "csv" in keys["oo"]:
         for row in outvals:
             writer.writerow(row)
 
-for key in outvals[0].keys():
+spine_offset = 0.2;
+current_spine = 1;
+
+fig, ax = plt.subplots()
+
+twins = []
+
+for i,key in enumerate(outvals[0].keys()):
     if key != keys["xlabel"]:
-        plt.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key)
+        if i > 1:
+            twins.append(ax.twinx())
+            twins[i-2].plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key)
+        else:
+            ax.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key)
 
 plt.title(name, fontsize=20)
-plt.xlabel(keys["xlabel"])
-plt.ylabel(keys["ylabel"])
 plt.legend(loc='upper right')
+if len(keys["ylabel"]) == 0:
+    ax.set(xlabel=keys["xlabel"], ylabel="V")
+else:
+    ax.set(xlabel=keys["xlabel"], ylabel=keys["ylabel"][0])
+
+for i in range(len(twins)):
+    if i + 1 > len(keys["ylabel"]):
+        continue
+    else:
+        twins[i].set(xlabel=keys["xlabel"], ylabel=keys["ylabel"][i + 1])
 
 for oo in keys["oo"]:
     if oo == "csv":
