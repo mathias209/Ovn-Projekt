@@ -5,6 +5,7 @@ import re
 import os
 import matplotlib.colors as mcolors
 from tqdm import tqdm
+from scipy.signal import savgol_filter
 
 print("Processing config...")
 
@@ -112,8 +113,11 @@ print("Done!\n\nOutputting csv...")
 
 name = keys["in"].split(".")[0]
 outname = f"{name}-out"
-if keys["out"] is str:
+title = name
+if isinstance(keys["out"], str):
     outname = keys["out"]
+    title = keys["out"]
+
 
 if "csv" in keys["oo"]:
     keys["oo"].remove("csv")
@@ -142,12 +146,17 @@ for i,key in enumerate(outvals[0].keys()):
         if i > 1 and i <= len(keys["ylabel"]):
             cur = len(twins)
             twins.append(ax.twinx())
+             # window size 51, polynomial order 3
             twinplots.append(twins[cur].plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key, color=f"C{(i-1) % 10}"))
         else:
-            ax.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key, color=f"C{(i-1) % 10}")
+            if "smooth" not in sys.argv:
+                ax.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key, color=f"C{(i-1) % 10}")
+            else:
+                ax.plot([row[keys["xlabel"]] for row in outvals], savgol_filter([row[key] for row in outvals], 100, 5), label=key, color=f"C{(i-1) % 10}")
 
+twins[0].set_ylim([0,15])
 
-plt.title(name, fontsize=20)
+plt.title(title, fontsize=20)
 fig.legend(loc='upper right')
 if len(keys["ylabel"]) == 0:
     ax.set(xlabel=keys["xlabel"], ylabel="V")
@@ -175,6 +184,8 @@ if "debug" in sys.argv:
     pltstring += f"stepsize: {stepsize}\n"
 
     plt.text(0.91, 0.07, pltstring, fontsize=9, transform=plt.gcf().transFigure)
+
+
 
 if "show" in sys.argv:
     plt.show()

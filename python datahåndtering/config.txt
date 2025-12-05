@@ -1,10 +1,11 @@
-in: merged_tis2.csv
+in: ovn9.csv
+out: Opvarmnings forløb
 iscale: 0.001
-oscale: 1
-start: 0
+oscale: 0.001
+start: 277
 end: 1000
-oo: pdf,jpg,csv
+oo: pdf,csv,png,svg
 yscale: 0.01,1
 xlabel: tid[s]
 ylabel: temp[C],Volt
-curves: T1,2Hz,sorted T1
+curves: Ovn-Temp,Komperator
