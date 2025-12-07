@@ -1,10 +1,10 @@
 in: ovn9.csv
-out: Opvarmnings forløb
+out: maxmin 50C
 iscale: 0.001
 oscale: 0.001
-start: 277
-end: 1000
-oo: pdf,csv,png,svg
+start: 304
+end: 381
+oo: csv,svg
 yscale: 0.01,1
 xlabel: tid[s]
 ylabel: temp[C],Volt

@@ -6,6 +6,9 @@ import os
 import matplotlib.colors as mcolors
 from tqdm import tqdm
 from scipy.signal import savgol_filter
+import numpy as np
+from scipy.stats import linregress
+import statistics
 
 print("Processing config...")
 
@@ -99,15 +102,15 @@ for i,key in enumerate(vals[0].keys()):
         keys["yscale"] = keys["yscale"][0]
 
 outvals = []
-sec = 0
+sec = -(float(keys["oscale"]))
 for i,row in enumerate(vals):
+    sec += float(keys["oscale"])
     if i < s_start:
         continue
     if i == s_end:
         break
     if (i % stepsize == 0):
         outvals.append({keys["xlabel"]: sec} | {key: float(row[key]) / float(keys["yscale"][n]) if row[key] != '' else None for n,key in enumerate(row.keys())})
-        sec += float(keys["oscale"])
 
 print("Done!\n\nOutputting csv...")
 
@@ -140,6 +143,7 @@ fig, ax = plt.subplots()
 
 twins = []
 twinplots = []
+last_i = 0
 
 for i,key in enumerate(outvals[0].keys()):
     if key != keys["xlabel"]:
@@ -153,8 +157,24 @@ for i,key in enumerate(outvals[0].keys()):
                 ax.plot([row[keys["xlabel"]] for row in outvals], [row[key] for row in outvals], label=key, color=f"C{(i-1) % 10}")
             else:
                 ax.plot([row[keys["xlabel"]] for row in outvals], savgol_filter([row[key] for row in outvals], 100, 5), label=key, color=f"C{(i-1) % 10}")
+    last_i = i
 
 twins[0].set_ylim([0,15])
+
+if "linreg" in sys.argv:
+    reg_x = [row[keys["xlabel"]] for row in outvals]
+    linreg = linregress(reg_x,[row["Ovn-Temp"] for row in outvals])
+    print(f"{linreg[0]} | {linreg[1]} | {linreg[2]**2}")
+    ax.plot(reg_x,[(x*linreg[0]+linreg[1]) for x in reg_x],color=f"C{last_i + 1}",label="linreg") 
+    plt.text(0.6, 0.8, f"f(x)={linreg[0]}x+{linreg[1]}\nR²={linreg[2]**2}", fontsize=12, transform=plt.gcf().transFigure, color=f"C{last_i + 1}")
+
+if "maxmin" in sys.argv:
+    yvals = savgol_filter([row["Ovn-Temp"] for row in outvals], 100, 5)
+    maxval = max(yvals)
+    minval = min(yvals)
+    meanval = statistics.mean(yvals)
+    plt.text(0.4, 0.8, f"max: {maxval}, min: {minval}\n+Afvigelse={maxval-meanval}\n-Afvigelse={meanval-minval}", fontsize=12, transform=plt.gcf().transFigure, color=f"C{last_i + 1}")
+
 
 plt.title(title, fontsize=20)
 fig.legend(loc='upper right')
